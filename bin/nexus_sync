@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'pry'
+
+$LOAD_PATH.unshift(File.join(__dir__, '../lib'))
+require 'nexus_sync'
+
+NexusSync::CLI.sync

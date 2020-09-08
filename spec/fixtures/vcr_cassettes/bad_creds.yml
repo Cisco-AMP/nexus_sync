@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://[YOUR_NEXUS_SERVER_URL]/service/rest/v1/status/writable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin15.6.0 x86_64) ruby/2.4.1p111
+      Authorization:
+      - Basic YmFkOmNyZWRz
+      Host:
+      - [YOUR_NEXUS_SERVER_URL]
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 22 Jul 2019 23:15:24 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=5
+      X-Content-Type-Options:
+      - nosniff
+      Www-Authenticate:
+      - BASIC realm="Sonatype Nexus Repository Manager"
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Mon, 22 Jul 2019 23:15:24 GMT
+recorded_with: VCR 5.0.0

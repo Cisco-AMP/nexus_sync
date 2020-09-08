@@ -1,0 +1,8 @@
+require 'nexus_sync/items/item'
+require 'nexus_sync/items/docker_item'
+require 'nexus_sync/items/maven_item'
+require 'nexus_sync/items/npm_item'
+require 'nexus_sync/items/pypi_item'
+require 'nexus_sync/items/raw_item'
+require 'nexus_sync/items/rubygems_item'
+require 'nexus_sync/items/yum_item'
